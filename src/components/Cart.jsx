@@ -5,8 +5,8 @@ const Cart = ({ cart }) => {
     <div>
       <h2>Shopping Cart</h2>
       <ul>
-        {cart.map((item, index) => (
-          <li key={index}>{item.name} is in your cart</li>
+        {cart.map(product => (
+          <li key={product.id}>{product.name} is in your cart</li>
         ))}
       </ul>
     </div>
