@@ -25,11 +25,7 @@ const App = () => {
         <option value="Dairy">Dairy</option>
       </select>
 
-      <ProductList
-        category={category}
-        cart={cart}
-        setCart={setCart}
-      />
+      <ProductList category={category} cart={cart} setCart={setCart} />
 
       <Cart cart={cart} />
     </div>
@@ -37,3 +33,4 @@ const App = () => {
 }
 
 export default App
+
